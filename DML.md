@@ -7,7 +7,7 @@
 - [Uso da sentencia DELETE](#Uso-da-sentencia-DELETE)
 
 
-O DML é outra sublinguaxe de SQL, que ten a funcionalidade de **agregar**, **borrar** ou **modificar** tuplas de unha táboa da BD. Esta sublinguaxe a diferencia de DDl, ***actúa sobre os datos***, contando que a anterior actuaba sobre os obxectos.
+O DML é outra sublinguaxe de SQL, que ten a funcionalidade de **agregar**, **borrar** ou **modificar** tuplas de unha táboa da BD. Esta sublinguaxe a diferencia de DDL, ***actúa sobre os datos***, contando que a anterior actuaba sobre os obxectos.
 O significado de DML e *Data Manipulation Languaje*, en galego: *Linguaxe de manipulación de datos*.
 
   ### Antes de empezar, aclarar o significado da simboloxía:
@@ -44,7 +44,7 @@ SELECT nome, continente, area
 FROM mundo
 WHERE continente='Europa';
 ```
-Como tamén vemos neste outro exemplo, podemos conbinar o **INSERT INTO** con SELECT, FROM e WHERE.
+Como tamén vemos neste outro exemplo, podemos combinar o **INSERT INTO** con SELECT, FROM e WHERE.
 
 ### Uso da sentencia UPDATE
   A sentencia update, serve para modificar os datos xa existentes da táboa.
