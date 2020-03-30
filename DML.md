@@ -5,7 +5,9 @@
 - [Uso da sentencia INSERT](#Uso-da-sentencia-INSERT)
   - [Exemplos](#exemplos)
 - [Uso da sentencia UPDATE](#Uso-da-sentencia-UPDATE)
+  - [Exemplos](#exemplos)
 - [Uso da sentencia DELETE](#Uso-da-sentencia-DELETE)
+  - [Exemplos](#exemplos)
 
 O DML é outra sublinguaxe de SQL, que ten a funcionalidade de **agregar**, **borrar** ou **modificar** tuplas de unha táboa da BD. Esta sublinguaxe a diferencia de DDl, ***actúa sobre os datos***, contando que a anterior actuaba sobre os obxectos.
 O significado de DML e *Data Manipulation Languaje*, en galego: *Linguaxe de manipulación de datos*.
