@@ -1,0 +1,2 @@
+# Apuntes
+## Sublenguaje DDL
