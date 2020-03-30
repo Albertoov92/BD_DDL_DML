@@ -3,6 +3,7 @@
 ### Índice
 
 - [Uso da sentencia INSERT](#Uso-da-sentencia-INSERT)
+  - [Exemplos](#exemplos)
 - [Uso da sentencia UPDATE](#Uso-da-sentencia-UPDATE)
 - [Uso da sentencia DELETE](#Uso-da-sentencia-DELETE)
 
