@@ -65,25 +65,23 @@ Para crear unha base de datos, temos que levar a cabo diferentes CREATE.
 
 O primeiro que temos que usar é:
 
-´´´sql
+```sql
 CREATE SHEMA <nome_da_base_de_datos>
-´´´
+```
 
 Logo desto temos que crear os dominios, para iso usaremos:
 
-´´´sql
+```sql
 CREATE DOMAIN <nome_do_dominio> <tipo_de_datos>
-´´´
+```
 
 Esta creación de dominios serve para declarar un elemento que vamos usar máis de unha vez. Esto aforrarános traballo xa que non teremos que escribir todo, (a sentenncia, o nome e o tipo (xunto co número da extensión)).
 
 Dende que xza temos a BD creada, e todos os dominios declarados, comezaremos a crear táboas con:
 
-´´´sql
-
+```sql
 CREATE TABLE <nome_da_táboa>
 	<atributo1> <dominio1> [NOT NULL] [DEFAULT <x>]
-
-´´´
+````
 	
-** Un exemplo de creación de unha BD dende 0 **
+**Un exemplo de creación de unha BD dende 0**
