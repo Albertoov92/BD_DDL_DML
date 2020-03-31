@@ -87,7 +87,7 @@ CREATE TABLE <nome_da_táboa>
 **Un exemplo de creación de unha BD dende cero**
 
 ```sql
-CREATE SHEMA BaseDeDatosClase09032020
+CREATE SCHEMA BaseDeDatosClase09032020
 
 
 CREATE DOMAIN Nome_Válido CHAR(30);
