@@ -195,5 +195,5 @@ CREATE TABLE Participa (
         
 );
 ```
-Nesta BD, vemos como ao principio creamos a BD con ```sql CREATE SCHEMA ``` , logo definimos todos os dominios con ```sql CREATE DOMAIN ```.
-Lodo disto comezamos a crear táboas con ```sql  CREATE TABLE ``` Creamos as táboas: **SEDE**, **DEPARTAMENTO**, **UBICACIÓN**, **GRUPO**, **PROFESOR**, **PROXECTO** e **PARTICIPA**
+Nesta BD, vemos como ao principio creamos a BD con ```CREATE SCHEMA ``` , logo definimos todos os dominios con ```CREATE DOMAIN ```.
+Lodo disto comezamos a crear táboas con ```CREATE TABLE ``` Creamos as táboas: **SEDE**, **DEPARTAMENTO**, **UBICACIÓN**, **GRUPO**, **PROFESOR**, **PROXECTO** e **PARTICIPA**
