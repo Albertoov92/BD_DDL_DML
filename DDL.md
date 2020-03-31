@@ -27,3 +27,14 @@ O ```IF NOT EXISTS``` serve para que comprobe se existe algunha táboa, bases de
 O ```CHARACTER``` Usase para asignar xogos de caracteres a BD, como o UTF.
 
 O ```DEFAULT``` asigna un valor por defecto.
+
+As restriccións que aparecen ao final en realidade chámanse *constraints*, que é o nome da sentencia que usamos para definilas.
+
+Existen 4 *contriants* ou restriccións, que son as seguintes:
+
+**De clave primaria**
+
+```sql
+[[CONSTRAINT <nombreDeRestriccion>] 
+	PRIMARY KEY (<atributos>)]
+```
