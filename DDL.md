@@ -106,7 +106,7 @@ CREATE DOMAIN Tipo_DNI CHAR(9);
 CREATE TABLE Sede (
     Nome_Sede Nome_Válido,
     Campus    Nome_Válido NOT NULL,
-    CONSTRAINT PK_Sede  -- Isto usase parea nomear onde se declarou a PRIMARY KEY, por se algún día é necesario buscalo --
+    CONSTRAINT PK_Sede  -- Isto usase para nomear onde se declarou a PRIMARY KEY, por se algún día é necesario buscalo --
         PRIMARY KEY (Nome_Sede)
 );
 
