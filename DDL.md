@@ -77,5 +77,5 @@ Dende que xza temos a BD creada, e todos os dominios declarados, comezaremos a c
 ´´´sql
 CREATE TABLE <nome_da_táboa>
 	<atributo1> <dominio1> [NOT NULL] [DEFAULT <x>]
-```
+´´´
 ** Un exemplo de creación de unha BD dende 0 **
