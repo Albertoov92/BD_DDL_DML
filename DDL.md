@@ -77,7 +77,7 @@ CREATE DOMAIN <nome_do_dominio> <tipo_de_datos>
 
 Esta creación de dominios serve para declarar un elemento que vamos usar máis de unha vez. Esto aforrarános traballo xa que non teremos que escribir todo, (a sentenncia, o nome e o tipo (xunto co número da extensión)).
 
-Dende que xza temos a BD creada, e todos os dominios declarados, comezaremos a crear táboas con:
+Dende que xa temos a BD creada, e todos os dominios declarados, comezaremos a crear táboas con:
 
 ```sql
 CREATE TABLE <nome_da_táboa>
@@ -195,5 +195,9 @@ CREATE TABLE Participa (
         
 );
 ```
-Nesta BD, vemos como ao principio creamos a BD con ```CREATE SCHEMA ``` , logo definimos todos os dominios con ```CREATE DOMAIN ```.
-Lodo disto comezamos a crear táboas con ```CREATE TABLE ``` Creamos as táboas: **SEDE**, **DEPARTAMENTO**, **UBICACIÓN**, **GRUPO**, **PROFESOR**, **PROXECTO** e **PARTICIPA**
+Nesta BD, vemos como ao principio creamos a BD con ```CREATE SCHEMA ``` , logo definimos todos os dominios con ```CREATE DOMAIN ```. Vemos que o Tipo_DNI ten CHAR (9), eso significa que a súa extensión sempre vai ter que ser 9, xa que o DNI son 8num + 1 letra
+Lodo disto comezamos a crear táboas con ```CREATE TABLE ``` Creamos as táboas: **SEDE**, **DEPARTAMENTO**, **UBICACIÓN**, **GRUPO**, **PROFESOR**, **PROXECTO** e **PARTICIPA**. En cada unha delas levase a acabo unha cousa distinta. Por exemplo: Na táboa Sede, faise unha restricción / constraint, e dise que a clave principal será Nome_Sede. Na táboa Ubicación faise unha cable composta, por: Nome_Sede e Nome_Departamento. Támen podemos observar a sentencia ```FOREIGN KEY```, sirve para crear relacións entre táboas, isto fai referencia a unha clave principal de outra táboa.
+
+Logo na BD de exemplo encontramos os borrados e modificacions ```ON DELETE``` e ```ON UPDATE```, que pode ser: en *Cascada* identificado cunha C, que como ben dice, actuaría en cascada tanto o borrado como ás modificacións. o *No Action*, que se identifica cunha R, non afectaría en nada nin ao borrado nin ás modificacións. *Set Null*, aplica ante borrado ou modificación un valor nulo, e por último *Set Default* aplicaría un valor por defecto.
+
+Máis tarde na táboa Proxecto, observamos o primeiro ```CHECK``` que comprobará unha comparación entre datas neste caso (Data_Inicio anterior a Data_Fin, se non é así, non aceptará datos que non cumpran iso)
