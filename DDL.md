@@ -6,9 +6,9 @@ O DDL é unha sublinguaxe de SQL, xunto co DDL, DCL, TCL, SCL. O DDL ten a funci
 
   ### Antes de empezar, aclarar o significado da simboloxía:
 
-  [ ] Os corchetes significan que o que está entre eles é opcional
+  [ ] Os corchetes significan que o que está entre eles é opcional.
  
-   |  A barra vertical significa OU (o que está antesd ou o que está despois)
+   |  A barra vertical significa OU (o que está antes ou o que está despois).
 
 ### Uso da sentencia CREATE
 A sentencia CREATE, serve para crear tablas, BD, usuarios, esquemas (é o mismo que as BD, pero con menos restriccións).
@@ -35,6 +35,47 @@ Existen 4 *contriants* ou restriccións, que son as seguintes:
 **De clave primaria**
 
 ```sql
-[[CONSTRAINT <nombreDeRestriccion>] 
-	PRIMARY KEY (<atributos>)]
+[[CONSTRAINT <nome_da_restricción>] 
+	 PRIMARY KEY (<atributos>)]
 ```
+
+**De clave foránea**
+```sql
+[[CONSTRAINT <nome_da_restricción>]
+         FOREIGN KEY (<atributos>)
+         REFERENCES <nome_da_táboa_de_referencia> (<atributo_referenciado>)]
+ ```
+ 
+**De unicidade**
+```sql
+[CONSTRAINT <nome_da_restricción>]
+             UNIQUE (<atributos>)]
+```
+
+**De comprobación** (non entra en exame)
+```sql
+[CONSTRAINT <nome_da_restricción]
+	CHECK (atributoA IN (valor1, ... , valorN))
+	[[NOT] DEFERABLE]
+	[INITIALLY INMEDIATED | DEFERRD]]
+```
+
+#### Creación dunha base de datos
+Para crear unha base de datos, temos que levar a cabo diferentes CREATE.
+
+O primeiro que temos que usar é:
+´´´sql
+CREATE SHEMA <nome_da_base_de_datos>
+´´´
+Logo desto temos que crear os dominios, para iso usaremos:
+´´´sql
+CREATE DOMAIN <nome_do_dominio> <tipo_de_datos>
+´´´
+Esta creación de dominios serve para declarar un elemento que vamos usar máis de unha vez. Esto aforrarános traballo xa que non teremos que escribir todo, (a sentenncia, o nome e o tipo (xunto co número da extensión)).
+
+Dende que xza temos a BD creada, e todos os dominios declarados, comezaremos a crear táboas con:
+´´´sql
+CREATE TABLE <nome_da_táboa>
+	<atributo1> <dominio1> [NOT NULL] [DEFAULT <x>]
+```
+** Un exemplo de creación de unha BD dende 0 **
