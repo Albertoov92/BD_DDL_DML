@@ -51,6 +51,7 @@ Existen 4 *contriants* ou restriccións, que son as seguintes:
 [CONSTRAINT <nome_da_restricción>]
              UNIQUE (<atributos>)]
 ```
+Coa sentencia ``` UNIQUE + NOT NULL``` crearemos as claves alternativas
 
 **De comprobación** (non entra en exame)
 ```sql
@@ -196,8 +197,32 @@ CREATE TABLE Participa (
 );
 ```
 Nesta BD, vemos como ao principio creamos a BD con ```CREATE SCHEMA ``` , logo definimos todos os dominios con ```CREATE DOMAIN ```. Vemos que o Tipo_DNI ten CHAR (9), eso significa que a súa extensión sempre vai ter que ser 9, xa que o DNI son 8num + 1 letra
-Lodo disto comezamos a crear táboas con ```CREATE TABLE ``` Creamos as táboas: **SEDE**, **DEPARTAMENTO**, **UBICACIÓN**, **GRUPO**, **PROFESOR**, **PROXECTO** e **PARTICIPA**. En cada unha delas levase a acabo unha cousa distinta. Por exemplo: Na táboa Sede, faise unha restricción / constraint, e dise que a clave principal será Nome_Sede. Na táboa Ubicación faise unha cable composta, por: Nome_Sede e Nome_Departamento. Támen podemos observar a sentencia ```FOREIGN KEY```, sirve para crear relacións entre táboas, isto fai referencia a unha clave principal de outra táboa.
+Lodo disto comezamos a crear táboas con ```CREATE TABLE ``` Creamos as táboas: **SEDE**, **DEPARTAMENTO**, **UBICACIÓN**, **GRUPO**, **PROFESOR**, **PROXECTO** e **PARTICIPA**. En cada unha delas levase a acabo unha cousa distinta. Por exemplo: Na táboa Sede, faise unha restricción / constraint, e dise que a clave principal ```PRIMARY KEY``` será Nome_Sede, esta nunca pode ser nula, nin repetirse os valores (existiría conflicto). Na táboa Ubicación faise unha cable composta, por: Nome_Sede e Nome_Departamento. Támen podemos observar a sentencia ```FOREIGN KEY```, sirve para crear relacións entre táboas, isto fai referencia a unha clave principal de outra táboa.
 
 Logo na BD de exemplo encontramos os borrados e modificacions ```ON DELETE``` e ```ON UPDATE```, que pode ser: en *Cascada* identificado cunha C, que como ben dice, actuaría en cascada tanto o borrado como ás modificacións. o *No Action*, que se identifica cunha R, non afectaría en nada nin ao borrado nin ás modificacións. *Set Null*, aplica ante borrado ou modificación un valor nulo, e por último *Set Default* aplicaría un valor por defecto.
 
 Máis tarde na táboa Proxecto, observamos o primeiro ```CHECK``` que comprobará unha comparación entre datas neste caso (Data_Inicio anterior a Data_Fin, se non é así, non aceptará datos que non cumpran iso)
+
+### Uso da sentencia Alter###
+```sql
+ALTER TABLE [IF EXISTS] <nome_da_táboa>
+	    [RENAME TO <novo_nome_da_táboa>],
+	    [RENAME [COLUMN | CONSTRAINT] <nome_orixinal> TO <novo_nome>],
+	    [SET SCHEMA <novo_Schema>],
+	    [ADD | DROP [COLUMN | CONSTRAINT] <nome>]
+```
+O ```ALTER TABLE``` usase para modificar datos das táboas. Tanto para engadir como para eliminar columnas ou restriccións.Tamén podemos renomear algunhos elementos e vincular táboas con outras bases de datos con el.
+
+### Uso da sentencia Drop###
+Esta é outra maneira de eliminar datos da táboa. Esta sentencia ademáis de eliminar a táboa tamén o contido.
+Esta é unha forma perfecta para eliminar a BD completa
+
+```sql
+DROP SCHEMA [IF EXISTS] <nomeDoSchema>
+	    [RESTRICT | CASCADE]
+;
+
+DROP TABLE  [IF EXISTS] <nomeDaTaboa>
+	    [RESTRICT | CASCADE]
+;
+```
