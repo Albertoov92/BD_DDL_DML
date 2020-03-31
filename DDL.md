@@ -212,7 +212,7 @@ Logo na BD de exemplo encontramos os borrados e modificacions ```ON DELETE``` e 
 
 Máis tarde na táboa Proxecto, observamos o primeiro ```CHECK``` que comprobará unha comparación entre datas neste caso (Data_Inicio anterior a Data_Fin, se non é así, non aceptará datos que non cumpran iso)
 
-### Uso da sentencia Alter###
+### Uso da sentencia Alter ###
 ```sql
 ALTER TABLE [IF EXISTS] <nome_da_táboa>
 	    [RENAME TO <novo_nome_da_táboa>],
@@ -222,7 +222,7 @@ ALTER TABLE [IF EXISTS] <nome_da_táboa>
 ```
 O ```ALTER TABLE``` usase para modificar datos das táboas. Tanto para engadir como para eliminar columnas ou restriccións.Tamén podemos renomear algunhos elementos e vincular táboas con outras bases de datos con el.
 
-### Uso da sentencia Drop###
+### Uso da sentencia Drop ###
 Esta é outra maneira de eliminar datos da táboa. Esta sentencia ademáis de eliminar a táboa tamén o contido.
 Esta é unha forma perfecta para eliminar a BD completa
 
