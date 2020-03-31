@@ -84,4 +84,19 @@ CREATE TABLE <nome_da_táboa>
 	<atributo1> <dominio1> [NOT NULL] [DEFAULT <x>]
 ````
 	
-**Un exemplo de creación de unha BD dende 0**
+**Un exemplo de creación de unha BD dende cero**
+
+```sql
+CREATE SHEMA BaseDeDatosClase09032020
+
+
+CREATE DOMAIN Nome_Válido CHAR(30);
+CREATE DOMAIN Tipo_Código CHAR(5);
+CREATE DOMAIN Tipo_DNI CHAR(9);
+
+CREATE TABLE Sede (
+    Nome_Sede Nome_Válido,
+    Campus    Nome_Válido NOT NULL,
+    CONSTRAINT PK_Sede
+        PRIMARY KEY (Nome_Sede)
+);
