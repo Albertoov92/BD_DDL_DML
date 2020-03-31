@@ -5,7 +5,9 @@
 - [Simboloxía](#antes-de-empezar-aclarar-o-significado-da-simboloxía)
 - [Sentencia CREATE](#uso-da-sentencia-create)
 - [Restricións](#Uso-das-restricións)
-- [Creación dunha base de datos dende 0](#antes-de-empezar-aclarar-o-significado-da-simboloxía)
+- [Creación dunha base de datos](#creación-dunha-base-de-datos)
+- [Sentencia ALTER](#uso-da-sentencia-alter)
+- [Sentencia DROP](#uso-da-sentencia-drop)
 
 O DDL é unha sublinguaxe de SQL, xunto co DDL, DCL, TCL, SCL. O DDL ten a funcionalidade de **crear**, **borrar** e **modificar** tablas da BD. Este sublinguaxe actúa sobre os **obxectos**  significa Data Definition Languaje. Esto serve para crear, modificar e borrar tablas e bases de datos
 
@@ -151,7 +153,7 @@ CREATE TABLE Profesor (
     Experiencia   Integer,
     N_Grupo         Nome_Válido,
     N_Departamento  Nome_Válido,
-    CONSTRAINT FK_Grupo
+    CONSTRAINT FK_Grupo  !-- Isto usase parea nomear onde se declarou a PRIMARY KEY, por se algún día é necesario buscalo --!
         FOREIGN KEY        (N_Grupo, N_Departamento)
         REFERENCES N_Grupo (Nome_Grupo, Nome_Departamento)
         ON DELETE SET NULL
