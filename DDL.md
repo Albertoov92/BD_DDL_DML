@@ -106,7 +106,7 @@ CREATE DOMAIN Tipo_DNI CHAR(9);
 CREATE TABLE Sede (
     Nome_Sede Nome_Válido,
     Campus    Nome_Válido NOT NULL,
-    CONSTRAINT PK_Sede
+    CONSTRAINT PK_Sede  -- Isto usase parea nomear onde se declarou a PRIMARY KEY, por se algún día é necesario buscalo --
         PRIMARY KEY (Nome_Sede)
 );
 
@@ -153,7 +153,7 @@ CREATE TABLE Profesor (
     Experiencia   Integer,
     N_Grupo         Nome_Válido,
     N_Departamento  Nome_Válido,
-    CONSTRAINT FK_Grupo  !-- Isto usase parea nomear onde se declarou a PRIMARY KEY, por se algún día é necesario buscalo --!
+    CONSTRAINT FK_Grupo  
         FOREIGN KEY        (N_Grupo, N_Departamento)
         REFERENCES N_Grupo (Nome_Grupo, Nome_Departamento)
         ON DELETE SET NULL
