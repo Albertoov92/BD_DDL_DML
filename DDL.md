@@ -2,9 +2,10 @@
 ## A sublinguaxe DDL
 ### Índice
 
-- [Simboloxía](#antes-de-empezar-aclarar-o-significado-da-simboloxia)
+- [Simboloxía](#antes-de-empezar-aclarar-o-significado-da-simboloxía)
 - [Sentencia CREATE](#uso-da-sentencia-create)
 - [Restricións](#Uso-das-restricións)
+- [Creación dunha base de datos dende 0](#antes-de-empezar-aclarar-o-significado-da-simboloxía)
 
 O DDL é unha sublinguaxe de SQL, xunto co DDL, DCL, TCL, SCL. O DDL ten a funcionalidade de **crear**, **borrar** e **modificar** tablas da BD. Este sublinguaxe actúa sobre os **obxectos**  significa Data Definition Languaje. Esto serve para crear, modificar e borrar tablas e bases de datos
 
@@ -33,7 +34,7 @@ O ```CHARACTER``` Usase para asignar xogos de caracteres a BD, como o UTF.
 O ```DEFAULT``` asigna un valor por defecto.
 
 
-### Uso das restricións###
+### Uso das restricións ###
 As restriccións que aparecen ao final en realidade chámanse *constraints*, que é o nome da sentencia que usamos para definilas.
 
 Existen 4 *contriants* ou restriccións, que son as seguintes:
@@ -67,7 +68,7 @@ Coa sentencia ``` UNIQUE + NOT NULL``` crearemos as claves alternativas
 	[INITIALLY INMEDIATED | DEFERRD]]
 ```
 
-#### Creación dunha base de datos
+#### Creación dunha base de datos ####
 Para crear unha base de datos, temos que levar a cabo diferentes CREATE.
 
 O primeiro que temos que usar é:
