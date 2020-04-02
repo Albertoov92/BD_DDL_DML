@@ -39,3 +39,4 @@ sudo mysql_secure_installation
 
 A todo o que nos pregunte contestaremos **y** que signica **yes**, e cando nos pida a contrasinal de root, proporcionaremoslla.
 
+![funcionando](/Captura.PNG)
