@@ -1,8 +1,8 @@
 # Instalación MariaDB
 ## En máquina de Linux, con versión Ubuntu 18.04
-### Eta maneira é moi simple para a comprensión, e lectura. Pero moi efectiva, que é o necesario.
+### Esta maneira é moi simple para a comprensión, e lectura. Pero moi efectiva, que é o necesario.
 
-### Primeiro paso: Engadir o repositorio
+#### Primeiro paso: Engadir o repositorio
 
 Para engadir o repositorio necesitamos uns comandos que podemos encontrar na páxina oficial de MariaDB.
 
@@ -18,7 +18,7 @@ Ao utilizar ```sudo``` pediranos sempre a contrasinal de administrador, pero des
 
 Logo de ter o repositorio engadidido procedemos ao seguinte paso:
 
-### Segundo paso: Instalar MariaDB server.
+#### Segundo paso: Instalar MariaDB server.
 
 Para iso levamos a cabo os seguintes comandos, dende a terminal.
 
@@ -29,7 +29,7 @@ sudo apt install mariadb-server
 
 Para verificar a instalación podemos usar o comando ```mysql -V``` , se nos di a versión de MariaDB que posuimos, é que a instalación foi correcta.
 
-### Último paso
+#### Último paso
 
 Para finalizar xa, levamos a cabo o sefuinte comando, o cal nos configura o usuario root, e elemina certos usuarios innecesarios e que nos poden crear confusións.
 
@@ -38,5 +38,8 @@ sudo mysql_secure_installation
 ```
 
 A todo o que nos pregunte contestaremos **y** que signica **yes**, e cando nos pida a contrasinal de root, proporcionaremoslla.
+
+
+# Aqui observamos o xestor de mysql funcionando na miña máquina virtual
 
 ![funcionando](/Captura.PNG)
