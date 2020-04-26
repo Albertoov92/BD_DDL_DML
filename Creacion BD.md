@@ -1,13 +1,8 @@
 # Creación da Base de datos
+![funcionando](img/Captura.PNG)
 ![funcionando](img/1.PNG)
 ![funcionando](img/2.PNG)
 ![funcionando](img/3.PNG)
-![funcionando](img/A0.PNG)
-![funcionando](img/A1.PNG)
-![funcionando](img/A2.PNG)
-![funcionando](img/A3.PNG)
-![funcionando](img/A4.PNG)
-![funcionando](img/Captura.PNG)
 ![funcionando](img/crearPlaneta.PNG)
 ![funcionando](img/crearaltertripulacion.PNG)
 ![funcionando](img/crearcamara.PNG)
@@ -16,6 +11,11 @@
 ![funcionando](img/createHabita.PNG)
 ![funcionando](img/createVisita.PNG)
 ![funcionando](img/profesorproxectoparticipaprogramafinancia.PNG)
+![funcionando](img/A0.PNG)
+![funcionando](img/A1.PNG)
+![funcionando](img/A2.PNG)
+![funcionando](img/A3.PNG)
+![funcionando](img/A4.PNG)
 
 ## SHOWS
 
